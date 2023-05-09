@@ -41,6 +41,11 @@
             </li>
           </ul>
         </nav>
+        <button class="menu-open-btn" type="button" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icon.svg#menu-burger"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="list address-list">
             <li class="address-item">
@@ -58,10 +63,84 @@
           </ul>
         </address>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn" type="button" data-menu-close>
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icon.svg#modal-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a
+                class="link mobile-menu-link studio-after-effect"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="link mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+          <address class="mobile-address">
+            <ul class="list mobile-address-list">
+              <li class="address-item">
+                <a
+                  class="link mobile-contact-address mobile-tel-address"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-address-item">
+                <a
+                  class="link mobile-contact-address"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icon.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icon.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icon.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">
+                <svg class="mobile-social-icon" width="24" height="24">
+                  <use href="./images/icon.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main class="main-page">
+      <!--===== hero page =====-->
       <section class="hero">
-        <!--===== hero page =====-->
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="main-btn" type="button" data-modal-open>
@@ -69,8 +148,8 @@
           </button>
         </div>
       </section>
+      <!--===== about company =====-->
       <section class="about section">
-        <!--===== about company =====-->
         <div class="container">
           <h2 class="company" hidden>company</h2>
           <ul class="benefits-list list">
@@ -107,8 +186,8 @@
             <li class="about-cmp-item">
               <h3 class="about-cmp-title">Strategy</h3>
               <p class="about-cmp-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
+                Our goal is to identify the business <br class="break-par" />
+                problem to walk away with the perfect and creative solution.
               </p>
             </li>
             <li class="about-cmp-item">
@@ -129,7 +208,8 @@
               <h3 class="about-cmp-title">Technologies</h3>
               <p class="about-cmp-text">
                 Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
+                deep passion for <br class="break-par" />
+                problem-solving.
               </p>
             </li>
           </ul>
@@ -143,45 +223,65 @@
             <li class="tehnologies-item">
               <img
                 class="tehnologies-img"
-                src="./images/gadgets/gadget-1.jpg"
+                srcset="
+                  ./images/gadgets/gadget-1_desk@1x.jpg 1x,
+                  ./images/gadgets/gadget-1_desk@2x.jpg 2x
+                "
+                src="./images/gadgets/gadget-1_desk@1x.jpg"
                 alt="our tehnologies"
                 width="360"
-                height="360"
+                height="300"
+                loading="lazy"
               />
             </li>
             <li class="tehnologies-item">
               <img
                 class="tehnologies-img"
-                src="./images/gadgets/gadget-2.jpg"
+                srcset="
+                  ./images/gadgets/gadget-2_desk@1x.jpg 1x,
+                  ./images/gadgets/gadget-2_desk@2x.jpg 2x
+                "
+                src="./images/gadgets/gadget-2_desk@1x.jpg"
                 alt="our tehnologies"
                 width="360"
-                height="360"
+                height="300"
+                loading="lazy"
               />
             </li>
             <li class="tehnologies-item">
               <img
                 class="tehnologies-img"
-                src="./images/gadgets/gadget-3.jpg"
+                srcset="
+                  ./images/gadgets/gadget-3_desk@1x.jpg 1x,
+                  ./images/gadgets/gadget-3_desk@2x.jpg 2x
+                "
+                src="./images/gadgets/gadget-3_desk@1x.jpg"
                 alt="our tehnologies"
                 width="360"
-                height="360"
+                height="300"
+                loading="lazy"
               />
             </li>
           </ul>
         </div>
       </section>
+      <!--===== team =====-->
       <section class="team">
-        <!--===== team =====-->
         <div class="container">
           <h2 class="primary-title">Our Team</h2>
           <ul class="list team-list">
             <li class="employee-item">
               <img
                 class="employee-img"
-                src="./images/employees/mark-guerrero.jpg"
+                srcset="
+                  ./images/employees/mark-guerrero@1x.jpg 1x,
+                  ./images/employees/mark-guerrero@2x.jpg 2x
+                "
+                src="./images/employees/mark-guerrero@1x.jpg"
                 alt="employee"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="text-perm">
                 <h3 class="employee-title">Mark Guerrero</h3>
@@ -221,10 +321,15 @@
             <li class="employee-item">
               <img
                 class="employee-img"
-                src="./images/employees/tom-ford.jpg"
+                srcset="
+                  ./images/employees/tom-ford@1x.jpg 1x,
+                  ./images/employees/tom-ford@2x.jpg 2x
+                "
+                src="./images/employees/tom-ford@1x.jpg"
                 alt="employee"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="text-perm">
                 <h3 class="employee-title">Tom Ford</h3>
@@ -264,10 +369,15 @@
             <li class="employee-item">
               <img
                 class="employee-img"
-                src="./images/employees/camila-garcia.jpg"
+                srcset="
+                  ./images/employees/camila-garcia@1x.jpg 1x,
+                  ./images/employees/camila-garcia@2x.jpg 2x
+                "
+                src="./images/employees/camila-garcia@1x.jpg"
                 alt="employee"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="text-perm">
                 <h3 class="employee-title">Camila Garcia</h3>
@@ -307,10 +417,15 @@
             <li class="employee-item">
               <img
                 class="employee-img"
-                src="./images/employees/daniel-wilson.jpg"
+                srcset="
+                  ./images/employees/daniel-wilson@1x.jpg 1x,
+                  ./images/employees/daniel-wilson@2x.jpg 2x
+                "
+                src="./images/employees/daniel-wilson@1x.jpg"
                 alt="employee"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="text-perm">
                 <h3 class="employee-title">Daniel Wilson</h3>
@@ -404,7 +519,7 @@
     <!--===== footer =====-->
     <footer class="page-footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-logo-wrapper">
           <a class="link logo footer-logo" href="./index.html"
             >Web<span class="light-logo">Studio</span></a
           >
@@ -544,5 +659,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
