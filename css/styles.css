@@ -212,11 +212,14 @@ body {
     margin-bottom: 284px;
   }
 
+  .mobile-address {
+    margin-bottom: 48px;
+  }
+
   .mobile-address-list {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 48px;
   }
 
   .mobile-contact-address {
@@ -231,6 +234,7 @@ body {
   }
 
   .mobile-tel-address {
+    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -284,6 +288,10 @@ body {
 @media only screen and (max-width: 427px) {
   .mobile-social-list {
     gap: 25px;
+  }
+
+  .mobile-tel-address {
+    font-size: 25px;
   }
 }
 
@@ -553,6 +561,12 @@ body {
   background-color: var(--ocean);
 }
 
+@media only screen and (max-width: 427px) {
+  .hero-title {
+    font-size: 32px;
+  }
+}
+
 @media only screen and (min-width: 429px) and (max-width: 768px) {
   .hero {
     background-image: linear-gradient(
@@ -577,7 +591,6 @@ body {
 
 @media only screen and (min-width: 768px) {
   .hero {
-    /* max-width: 768px; */
     height: 436px;
   }
 
@@ -705,12 +718,6 @@ body {
     padding-bottom: 120px;
   }
 
-  .benefits-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-  }
-
   .benefits-container {
     display: flex;
     justify-content: center;
@@ -725,7 +732,7 @@ body {
 
 /* SVG CONTENT */
 @media only screen and (max-width: 1157px) {
-  .benefits-list {
+  .benefits-list-item {
     display: none;
   }
 }
@@ -1092,6 +1099,10 @@ body {
 
   .footer-link-wrapper {
     margin-bottom: 0;
+  }
+
+  .footer-logo {
+    margin-right: 0;
   }
 
   .footer-form {
