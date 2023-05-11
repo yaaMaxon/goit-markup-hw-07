@@ -572,7 +572,6 @@ body {
 
 @media only screen and (min-width: 429px) and (max-width: 768px) {
   .hero {
-    max-width: 428px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -609,7 +608,6 @@ body {
 
 @media only screen and (min-width: 769px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
